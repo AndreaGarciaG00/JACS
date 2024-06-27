@@ -25,10 +25,10 @@ exports.signin = async (req, res, next) => {
         const { email, password } = req.body;
         //validacion
         if (!email) {
-            return next(new ErrorResponse("please add an email", 403));
+            return next(new ErrorResponse("Porfavor ingresa un Email", 403));
         }
         if (!password) {
-            return next(new ErrorResponse("please add a password", 403));
+            return next(new ErrorResponse("Porfavor ingresa una contraseña", 403));
         }
 
         //Checar email
